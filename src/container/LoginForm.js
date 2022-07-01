@@ -13,12 +13,12 @@ function LoginForm() {
             <div className='ui form'>
                 <div className='field'>
                     <label>Username</label>
-                    <input {...register('username',required='Username is required')} placeholder='Username' />
+                    <input {...register('username',{required:'Username is required'})} placeholder='Username' />
                 </div>
                 <p>{errors.username?.message}</p>
                 <div className='field'>
                     <label>Password</label>
-                    <input {...register('password',required='Password is required')} placeholder='Password' />
+                    <input {...register('password',{required:'Password is required'})} placeholder='Password' />
                 </div>
                 <p>{errors.password?.message}</p>
                 <button className='fluid ui button blue'>Submit</button>                

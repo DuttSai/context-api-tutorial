@@ -4,13 +4,8 @@ import LoginForm from './LoginForm'
 
 function Auth() {
     const user = true
-  return (
-    <div>
-        {
-            user ? <LoginForm /> : <Home />
-        }
-    </div>
-  )
+    return <>{user ? <LoginForm /> : <Home />}</>
+
 }
 
 export default Auth
